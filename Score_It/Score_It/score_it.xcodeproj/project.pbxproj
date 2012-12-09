@@ -22,6 +22,9 @@
 		609E12FC16717D7000BF1C58 /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 609E12FA16717D7000BF1C58 /* MasterViewController_iPad.xib */; };
 		609E12FF16717D7000BF1C58 /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 609E12FD16717D7000BF1C58 /* DetailViewController_iPhone.xib */; };
 		609E130216717D7000BF1C58 /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 609E130016717D7000BF1C58 /* DetailViewController_iPad.xib */; };
+		609E131E1674215F00BF1C58 /* YahtzeePlayerScorecard.m in Sources */ = {isa = PBXBuildFile; fileRef = 609E131C1674215F00BF1C58 /* YahtzeePlayerScorecard.m */; };
+		609E131F1674215F00BF1C58 /* YahtzeePlayerScorecard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 609E131D1674215F00BF1C58 /* YahtzeePlayerScorecard.xib */; };
+		609E13241674224000BF1C58 /* YahtzeeScorecard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 609E13231674224000BF1C58 /* YahtzeeScorecard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,10 @@
 		609E12FB16717D7000BF1C58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
 		609E12FE16717D7000BF1C58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		609E130116717D7000BF1C58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
+		609E131B1674215F00BF1C58 /* YahtzeePlayerScorecard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YahtzeePlayerScorecard.h; path = "Dice Games/Yahtzee/YahtzeePlayerScorecard.h"; sourceTree = "<group>"; };
+		609E131C1674215F00BF1C58 /* YahtzeePlayerScorecard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YahtzeePlayerScorecard.m; path = "Dice Games/Yahtzee/YahtzeePlayerScorecard.m"; sourceTree = "<group>"; };
+		609E131D1674215F00BF1C58 /* YahtzeePlayerScorecard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YahtzeePlayerScorecard.xib; path = "Dice Games/Yahtzee/YahtzeePlayerScorecard.xib"; sourceTree = "<group>"; };
+		609E13231674224000BF1C58 /* YahtzeeScorecard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YahtzeeScorecard.xib; path = "Dice Games/Yahtzee/YahtzeeScorecard.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +109,7 @@
 				609E12FA16717D7000BF1C58 /* MasterViewController_iPad.xib */,
 				609E12FD16717D7000BF1C58 /* DetailViewController_iPhone.xib */,
 				609E130016717D7000BF1C58 /* DetailViewController_iPad.xib */,
+				609E13221674217400BF1C58 /* Dice Games */,
 				609E12E016717D7000BF1C58 /* Supporting Files */,
 			);
 			path = score_it;
@@ -119,6 +127,25 @@
 				609E12EF16717D7000BF1C58 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		609E13211674216900BF1C58 /* Yahtzee */ = {
+			isa = PBXGroup;
+			children = (
+				609E131B1674215F00BF1C58 /* YahtzeePlayerScorecard.h */,
+				609E131C1674215F00BF1C58 /* YahtzeePlayerScorecard.m */,
+				609E131D1674215F00BF1C58 /* YahtzeePlayerScorecard.xib */,
+				609E13231674224000BF1C58 /* YahtzeeScorecard.xib */,
+			);
+			name = Yahtzee;
+			sourceTree = "<group>";
+		};
+		609E13221674217400BF1C58 /* Dice Games */ = {
+			isa = PBXGroup;
+			children = (
+				609E13211674216900BF1C58 /* Yahtzee */,
+			);
+			name = "Dice Games";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +207,8 @@
 				609E12FC16717D7000BF1C58 /* MasterViewController_iPad.xib in Resources */,
 				609E12FF16717D7000BF1C58 /* DetailViewController_iPhone.xib in Resources */,
 				609E130216717D7000BF1C58 /* DetailViewController_iPad.xib in Resources */,
+				609E131F1674215F00BF1C58 /* YahtzeePlayerScorecard.xib in Resources */,
+				609E13241674224000BF1C58 /* YahtzeeScorecard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +223,7 @@
 				609E12EA16717D7000BF1C58 /* AppDelegate.m in Sources */,
 				609E12F316717D7000BF1C58 /* MasterViewController.m in Sources */,
 				609E12F616717D7000BF1C58 /* DetailViewController.m in Sources */,
+				609E131E1674215F00BF1C58 /* YahtzeePlayerScorecard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +366,7 @@
 				609E130716717D7000BF1C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
